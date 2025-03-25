@@ -1,0 +1,32 @@
+{
+  "name": "pastidatang-app",
+  "version": "1.0.0",
+  "description": "Full-stack web application for pastidatang.com",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\" \"npm run start:bot\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "start:bot": "cd bot && npm start",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" \"npm run dev:bot\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:bot": "cd bot && npm run dev",
+    "install:all": "npm install && concurrently \"npm run install:frontend\" \"npm run install:backend\" \"npm run install:bot\"",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "install:bot": "cd bot && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "supabase",
+    "telegram-bot",
+    "rbac"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
