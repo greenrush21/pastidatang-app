@@ -1,0 +1,18 @@
+{
+  "name": "pastidatang-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot integration for Pastidatang app",
+  "main": "telegram-bot.js",
+  "scripts": {
+    "start": "node telegram-bot.js",
+    "dev": "nodemon telegram-bot.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "telegraf": "^4.12.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
